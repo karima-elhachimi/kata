@@ -1,18 +1,15 @@
-var isSquare = function(n){
-    if(n < 0) {
-      return false;
-    }
-    if(n === 0) 
-    return true;
-    
-    let max = n /2;
-    while(max--){
-    
-    if((max*max) === n) {
-      return true;
-    }
-    
-    return false;
-    
-    }
+export const isSquare = function(n){
+    let isSq = false;
+     if(n === 0) {
+       isSq = true;
+     }
+     
+     let max = n / 2;
+     while(max--){
+     
+       if((max*max) == n)
+         isSq = true;
+      
+      }
+    return isSq;
 }
