@@ -4,7 +4,7 @@
   "description": "",
   "main": "kata-7/index",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "start:watch": "nodemon --exec babel-node kata-7/index.js"
   },
   "repository": {
@@ -20,10 +20,13 @@
   "devDependencies": {
     "@babel/cli": "^7.6.4",
     "@babel/core": "^7.6.4",
-    "@babel/preset-env": "^7.6.3"
-  },
-  "dependencies": {
+    "@babel/preset-env": "^7.6.3",
+    "add": "^2.0.6",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "jest": "^24.9.0",
     "@babel/node": "^7.6.3",
+    "eslint": "^6.5.1",
     "nodemon": "^1.19.3"
-  }
+  },
+  "dependencies": {}
 }
